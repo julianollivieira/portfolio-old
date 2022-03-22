@@ -1,3 +1,13 @@
 {
-    "explorer.compactFolders": false
+  "[javascript][typescript][typescriptreact][json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    ".next": true,
+    ".yarn": true,
+    "node_modules": true,
+    "next-env.d.ts": true
+  }
 }
