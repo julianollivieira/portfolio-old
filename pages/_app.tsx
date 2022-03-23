@@ -1,8 +1,21 @@
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import { NextPage } from "next";
+import Head from "next/head";
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const App: NextPage<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Head>
+        <title>Page title</title>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
+};
 
-export default MyApp;
+export default App;
