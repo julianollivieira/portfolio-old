@@ -1,3 +1,4 @@
+import ExternalLink from "@/components/ExternalLink";
 import Image from "next/image";
 import type { ReactElement } from "react";
 import { getDaysMonthsYearsSinceBirthdate } from "@/utils";
@@ -19,14 +20,7 @@ const Summary = (): ReactElement => {
           {"the Netherlands"}
         </span>
         {"and am currently working as a full-stack developer at "}
-        <a
-          className="hover:text-gray-300 underline underline-offset-4"
-          href="https://itemlost.com"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          {"itemlost"}
-        </a>
+        <ExternalLink href="https://itemlost.com/">{"itemlost"}</ExternalLink>
         {"."}
       </p>
       <div className="overflow-hidden w-52 h-52 rounded-full border-4 border-white">
