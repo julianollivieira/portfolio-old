@@ -7,7 +7,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>{"Page title"}</title>
+        <title>{"Julian Ollivieira"}</title>
         <meta
           content="minimum-scale=1, initial-scale=1, width=device-width"
           name="viewport"
