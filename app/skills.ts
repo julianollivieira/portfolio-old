@@ -1,56 +1,76 @@
-const frontEndSkills = [
-  { label: "html", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-  { label: "css", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+enum Skill {
+  HTML = "html",
+  CSS = "css",
+  JavaScript = "javascript",
+  TypeScript = "typescript",
+  React = "react",
+  NextJS = "nextjs",
+  InertiaJS = "inertiajs",
+  TailwindCSS = "tailwindcss",
+  PHP = "php",
+  Laravel = "laravel",
+  NodeJS = "nodejs",
+  ExpressJS = "expressjs",
+  REST = "rest",
+  GraphQL = "graphql",
+  Rust = "rust",
+  Git = "git",
+  Docker = "docker",
+  PostgreSQL = "postgresql",
+  MySQL = "mysql",
+  MariaDB = "mariadb",
+  SQL = "sql",
+  Firebase = "firebase",
+}
+
+interface SkillCategory {
+  name: string;
+  skills: Skill[];
+}
+
+const skillCategories = [
   {
-    label: "javascript",
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    name: "front-end",
+    skills: [
+      Skill.HTML,
+      Skill.CSS,
+      Skill.JavaScript,
+      Skill.TypeScript,
+      Skill.React,
+      Skill.NextJS,
+      Skill.InertiaJS,
+      Skill.TailwindCSS,
+    ],
   },
   {
-    label: "typescript",
-    url: "https://www.typescriptlang.org/",
+    name: "back-end",
+    skills: [
+      Skill.PHP,
+      Skill.Laravel,
+      Skill.NodeJS,
+      Skill.ExpressJS,
+      Skill.REST,
+      Skill.GraphQL,
+      Skill.Rust,
+    ],
   },
-  { label: "react", url: "https://reactjs.org/" },
-  { label: "nextjs", url: "https://nextjs.org/" },
-  { label: "inertiajs", url: "https://inertiajs.com/" },
-  { label: "tailwindcss", url: "https://tailwindcss.com/" },
-];
-
-const backEndSkills = [
-  { label: "php", url: "https://www.php.net/" },
-  { label: "laravel", url: "https://laravel.com/" },
-  { label: "nodejs", url: "https://nodejs.org/en/" },
-  { label: "expressjs", url: "https://expressjs.com/" },
   {
-    label: "rest",
-    url: "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+    name: "devops",
+    skills: [Skill.Git, Skill.Docker],
   },
-  { label: "graphql", url: "https://graphql.org/" },
-  { label: "rust", url: "https://www.rust-lang.org/" },
+  {
+    name: "database",
+    skills: [Skill.PostgreSQL, Skill.MySQL, Skill.MariaDB, Skill.SQL],
+  },
+  {
+    name: "cloud service",
+    skills: [Skill.Firebase],
+  },
+  {
+    name: "soft",
+    skills: [],
+  },
 ];
 
-const devOpsSkills = [
-  { label: "docker", url: "https://www.docker.com/" },
-  { label: "git", url: "https://git-scm.com/" },
-];
-
-const softSkills = [{ label: "self-driven", url: "#" }];
-
-const databaseSkills = [
-  { label: "postgresql", url: "https://www.postgresql.org/" },
-  { label: "mysql", url: "https://www.mysql.com/" },
-  { label: "mariadb", url: "https://mariadb.org/" },
-  { label: "sql", url: "https://en.wikipedia.org/wiki/SQL" },
-];
-
-const cloudServiceSkills = [
-  { label: "firebase", url: "https://firebase.google.com/" },
-];
-
-export {
-  frontEndSkills,
-  backEndSkills,
-  devOpsSkills,
-  softSkills,
-  databaseSkills,
-  cloudServiceSkills,
-};
+export { skillCategories };
+export type { Skill, SkillCategory };

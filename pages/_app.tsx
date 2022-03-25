@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import { DataProvider } from "@/hooks/useData";
 import Head from "next/head";
 import type { NextPage } from "next";
 
@@ -13,7 +14,9 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
           name="viewport"
         />
       </Head>
-      <Component {...pageProps} />
+      <DataProvider>
+        <Component {...pageProps} />
+      </DataProvider>
     </>
   );
 };

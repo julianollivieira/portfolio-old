@@ -17,7 +17,7 @@ const Summary = ({
     >
       {`Hello 👋🏼 my name is Julian Ollivieira. I was born ${daysMonthsYears.days}
           days,  ${daysMonthsYears.months} months and  ${daysMonthsYears.years}
-          years ago in `}
+          years ago in`}
       <span className="px-2 mx-2 whitespace-nowrap bg-secondary-400 rounded">
         {"the Netherlands"}
       </span>
@@ -26,7 +26,7 @@ const Summary = ({
       {". I have a passion for learning new things and solving problems."}
       <br />
       <br />
-      {"I am currently learning more about Rust in my free time."}
+      {"I am currently learning more about 🦀 Rust in my free time."}
     </p>
   );
 };

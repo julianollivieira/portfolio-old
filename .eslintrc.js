@@ -21,6 +21,8 @@ module.exports = {
   rules: {
     "max-statements": "off",
     "one-var": "off",
+    "no-ternary": "off",
+    "no-fallthrough": "off",
     "max-lines-per-function": "off",
     "tailwindcss/classnames-order": "error",
     "tailwindcss/no-contradicting-classname": "error",
@@ -28,6 +30,8 @@ module.exports = {
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "react/prop-types": "off",
+    "func-style": "off",
+    "id-length": "off",
     "react/jsx-max-depth": "off",
     "react/forbid-component-props": "off",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
