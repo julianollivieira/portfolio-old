@@ -3,7 +3,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
         roboto: ["Roboto Mono", "monospace"],
       },
       colors: {
